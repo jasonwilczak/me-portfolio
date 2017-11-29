@@ -1,9 +1,9 @@
  
-#cssmenu,
-#cssmenu ul,
-#cssmenu ul li,
-#cssmenu ul li a,
-#cssmenu #menu-button {
+#nav_wrapper,
+#nav_wrapper ul,
+#nav_wrapper ul li,
+#nav_wrapper ul li a,
+#nav_wrapper #menu-button {
   margin: 0;
   padding: 0;
   border: 0;
@@ -15,8 +15,8 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-#cssmenu:after,
-#cssmenu > ul:after {
+#nav_wrapper:after,
+#nav_wrapper > ul:after {
   content: ".";
   display: block;
   clear: both;
@@ -24,16 +24,15 @@
   line-height: 0;
   height: 0;
 }
-#cssmenu #menu-button {
+#nav_wrapper #menu-button {
   display: none;
 }
-#cssmenu {
+#nav_wrapper {
   width: auto;
   line-height: 1;
 /*  background: #ffffff;
 */  z-index:9999;
-font-family: 'Montserrat', sans-serif;
- 
+  
  }
 #menu-line {
   position: absolute;
@@ -47,65 +46,60 @@ font-family: 'Montserrat', sans-serif;
   -o-transition: all 0.25s ease-out;
   transition: all 0.25s ease-out;
 }
-#cssmenu > ul > li {
+#nav_wrapper > ul > li {
   float: left;
 }
-#cssmenu.align-center > ul {
+#nav_wrapper.align-center > ul {
   font-size: 0;
   text-align: center;
 }
-#cssmenu.align-center > ul > li {
+#nav_wrapper.align-center > ul > li {
   display: inline-block;
   float: none;
 }
-#cssmenu.align-center ul ul {
+#nav_wrapper.align-center ul ul {
   text-align: left;
 }
-#cssmenu.align-right > ul > li {
+#nav_wrapper.align-right > ul > li {
   float: right;
 }
-#cssmenu.align-right ul ul {
+#nav_wrapper.align-right ul ul {
   text-align: right;
 }
 
-.slider_wrapper #cssmenu > ul > li > a {
+.slider_wrapper #nav_wrapper > ul > li > a {
 	 color: #fff;
  }
 
-#cssmenu > ul > li > a {
+#nav_wrapper > ul > li > a {
   padding:10px 20px;
-  font-size: 14px;
+  font-size: 18px;
   text-decoration: none;
-  color: #323232;
-  text-transform:uppercase;
+  color: #201e1e;
   -webkit-transition: color .2s ease;
   -moz-transition: color .2s ease;
   -ms-transition: color .2s ease;
   -o-transition: color .2s ease;
   transition: color .2s ease;
-    border-top:2px solid transparent;
-  border-bottom:2px solid transparent;
-}
-#cssmenu > ul > li > ul > li > a:hover,#cssmenu > ul > li > ul > li > ul > li > a:hover {
-	 background:#f5b705; 
  }
-#cssmenu > ul > li:hover > a,
-#cssmenu > ul > li.active > a {
-  color: #f5b705;
-  border-top:2px solid #f5b705;
-  border-bottom:2px solid #f5b705;
-}
-#cssmenu > ul > li.has-sub > a {
+#nav_wrapper > ul > li > ul > li > a:hover,#nav_wrapper > ul > li > ul > li > ul > li > a:hover {
+	 background:#26cc97; 
+ }
+#nav_wrapper > ul > li:hover > a,
+#nav_wrapper > ul > li.active > a {
+  color: #26cc97;
+ }
+#nav_wrapper > ul > li.has-sub > a {
   padding-right: 25px;
 }
-#cssmenu > ul > li.has-sub > a::after {
+#nav_wrapper > ul > li.has-sub > a::after {
   position: absolute;
   top: 15px;
   right: 10px;
   width: 4px;
   height: 4px;
-  border-bottom: 1px solid #f5b705;
-  border-right: 1px solid #f5b705;
+  border-bottom: 1px solid #26cc97;
+  border-right: 1px solid #26cc97;
   content: "";
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -118,28 +112,28 @@ font-family: 'Montserrat', sans-serif;
   -o-transition: border-color 0.2s ease;
   transition: border-color 0.2s ease;
 }
-#cssmenu > ul > li.has-sub:hover > a::after {
-  border-color: #f5b705;
+#nav_wrapper > ul > li.has-sub:hover > a::after {
+  border-color: #26cc97;
 }
-#cssmenu ul ul {
+#nav_wrapper ul ul {
   position: absolute;
   left: -9999px;
 }
-#cssmenu li:hover > ul {
+#nav_wrapper li:hover > ul {
   left: auto;
 }
-#cssmenu.align-right li:hover > ul {
+#nav_wrapper.align-right li:hover > ul {
   right: 0;
 }
-#cssmenu ul ul ul {
+#nav_wrapper ul ul ul {
   margin-left: 100%;
   top: 0;
 }
-#cssmenu.align-right ul ul ul {
+#nav_wrapper.align-right ul ul ul {
   margin-left: 0;
   margin-right: 100%;
 }
-#cssmenu ul ul li {
+#nav_wrapper ul ul li {
   height: 0;
   -webkit-transition: height .2s ease;
   -moz-transition: height .2s ease;
@@ -147,10 +141,10 @@ font-family: 'Montserrat', sans-serif;
   -o-transition: height .2s ease;
   transition: height .2s ease;
 }
-#cssmenu ul li:hover > ul > li {
+#nav_wrapper ul li:hover > ul > li {
   height: 42px;
 }
-#cssmenu ul ul li a {
+#nav_wrapper ul ul li a {
   padding: 15px 20px;
   width: 160px;
   font-size: 13px;
@@ -163,11 +157,11 @@ font-family: 'Montserrat', sans-serif;
   -o-transition: color .2s ease;
   transition: color .2s ease;
 }
-#cssmenu ul ul li:hover > a,
-#cssmenu ul ul li a:hover {
+#nav_wrapper ul ul li:hover > a,
+#nav_wrapper ul ul li a:hover {
   color: #ffffff;
  }
-#cssmenu ul ul li.has-sub > a::after {
+#nav_wrapper ul ul li.has-sub > a::after {
   position: absolute;
   top: 22px;
   right: 10px;
@@ -187,7 +181,7 @@ font-family: 'Montserrat', sans-serif;
   -o-transition: border-color 0.2s ease;
   transition: border-color 0.2s ease;
 }
-#cssmenu.align-right ul ul li.has-sub > a::after {
+#nav_wrapper.align-right ul ul li.has-sub > a::after {
   right: auto;
   left: 10px;
   border-bottom: 0;
@@ -195,45 +189,43 @@ font-family: 'Montserrat', sans-serif;
   border-top: 1px solid #dddddd;
   border-left: 1px solid #dddddd;
 }
-#cssmenu ul ul li.has-sub:hover > a::after {
+#nav_wrapper ul ul li.has-sub:hover > a::after {
   border-color: #ffffff;
 }
 @media all and (max-width: 979px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
-  #cssmenu {
+  #nav_wrapper {
     width: 100%;
    }
-  #cssmenu ul {
+  #nav_wrapper ul {
     width: 100%;
-    display: none;
-	background:#000;
-	
+ 	
     }
   
-  #cssmenu.align-center > ul,
-  #cssmenu.align-right ul ul {
+  #nav_wrapper.align-center > ul,
+  #nav_wrapper.align-right ul ul {
     text-align: left;
   }
-  #cssmenu ul li,
-  #cssmenu ul ul li,
-  #cssmenu ul li:hover > ul > li {
+  #nav_wrapper ul li,
+  #nav_wrapper ul ul li,
+  #nav_wrapper ul li:hover > ul > li {
     width: 100%;
     height: auto;
     border-top: 1px solid rgba(120, 120, 120, 0.15);
   }
-  #cssmenu ul li a,
-  #cssmenu ul ul li a {
+  #nav_wrapper ul li a,
+  #nav_wrapper ul ul li a {
     width: 100%;
   }
-  #cssmenu > ul > li > a{
+  #nav_wrapper > ul > li > a{
 	  padding:20px;
   }
-  #cssmenu > ul > li,
-  #cssmenu.align-center > ul > li,
-  #cssmenu.align-right > ul > li {
+  #nav_wrapper > ul > li,
+  #nav_wrapper.align-center > ul > li,
+  #nav_wrapper.align-right > ul > li {
     float: none;
     display: block;
   }
-  #cssmenu ul ul li a {
+  #nav_wrapper ul ul li a {
     padding: 20px 0px 20px 20px;
     font-size: 14px;
     color: #323232;
@@ -241,39 +233,30 @@ font-family: 'Montserrat', sans-serif;
 	font-weight:400;
 	text-transform: uppercase;
   }
-  #cssmenu ul ul li:hover > a,
-  #cssmenu ul ul li a:hover {
+  #nav_wrapper ul ul li:hover > a,
+  #nav_wrapper ul ul li a:hover {
     color: #fff;
   }
-  #cssmenu ul ul ul li a {
+  #nav_wrapper ul ul ul li a {
     padding-left: 40px;
   }
-  #cssmenu ul ul,
-  #cssmenu ul ul ul {
+  #nav_wrapper ul ul,
+  #nav_wrapper ul ul ul {
     position: relative;
     left: 0;
     right: auto;
     width: 100%;
     margin: 0;
    }
-  #cssmenu > ul > li.has-sub > a::after,
-  #cssmenu ul ul li.has-sub > a::after {
+  #nav_wrapper > ul > li.has-sub > a::after,
+  #nav_wrapper ul ul li.has-sub > a::after {
     display: none;
   }
   #menu-line {
     display: none;
   }
-  .silder_bg #cssmenu #menu-button{
-	  background:#fff;
-	  margin-top:30px;
-  }
-  .silder_bg #cssmenu ul{
-		background:#f2f2f2;
-	}
-  .silder_bg #cssmenu > ul > li > a{
-		color:#333;
-   }
- #cssmenu #menu-button {
+   
+ #nav_wrapper #menu-button {
     display: block;
     padding: 20px;
     color: #000;
@@ -282,7 +265,7 @@ font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
 	text-align:left;
   }
-  #cssmenu #menu-button::after {
+  #nav_wrapper #menu-button::after {
     content: '';
     position: absolute;
     top: 20px;
@@ -292,7 +275,7 @@ font-family: 'Montserrat', sans-serif;
     height: 2px;
     background: #000;
   }
-  #cssmenu #menu-button::before {
+  #nav_wrapper #menu-button::before {
     content: '';
     position: absolute;
     top: 25px;
@@ -303,7 +286,7 @@ font-family: 'Montserrat', sans-serif;
     border-top: 2px solid #000;
     border-bottom: 2px solid #000;
   }
-  #cssmenu .submenu-button {
+  #nav_wrapper .submenu-button {
     position: absolute;
     z-index: 10;
     right: 0;
@@ -314,7 +297,7 @@ font-family: 'Montserrat', sans-serif;
     width: 52px;
     cursor: pointer;
   }
-  #cssmenu .submenu-button::after {
+  #nav_wrapper .submenu-button::after {
     content: '';
     position: absolute;
     top: 21px;
@@ -325,7 +308,7 @@ font-family: 'Montserrat', sans-serif;
     background: #fff;
     z-index: 99;
   }
-  #cssmenu .submenu-button::before {
+  #nav_wrapper .submenu-button::before {
     content: '';
     position: absolute;
     left: 21px;
@@ -336,20 +319,19 @@ font-family: 'Montserrat', sans-serif;
     background: #fff;
     z-index: 99;
   }
-  #cssmenu .submenu-button.submenu-opened:after {
+  #nav_wrapper .submenu-button.submenu-opened:after {
     display: none;
    }
   
-#cssmenu > ul > li:hover > a,
-#cssmenu > ul > li.active > a {
-  border-top:2px solid transparent;
-  border-bottom:2px solid transparent;
-}
-#cssmenu > ul > li > ul > li > a:hover,#cssmenu > ul > li > ul > li > ul > li > a:hover {
+ 
+#nav_wrapper > ul > li > ul > li > a:hover,#nav_wrapper > ul > li > ul > li > ul > li > a:hover {
 	 background: none; 
-	color:#f5b705;
+	color:#26cc97;
 }
-  
+ 
+ #nav_wrapper {
+    padding: 15px 10px !important;
+ } 
 }
 
  
