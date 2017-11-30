@@ -17,6 +17,9 @@
 			 border:10px solid #fff;
 			 position:absolute;
 			 top:-120px;
+			 img {
+			 	@include border-radius(100%);
+			 }
 		 }
 		 
 		 .vertical_space{
